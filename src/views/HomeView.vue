@@ -155,7 +155,7 @@ function handleResult () {
       gap: 15px;
     }
     .complete {
-      background-color: green!important;
+      background: green!important;
     }
     button {
       cursor: pointer;
