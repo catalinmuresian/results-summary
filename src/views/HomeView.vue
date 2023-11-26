@@ -33,6 +33,7 @@ import {ref} from "vue";
 import CardComp from "@/components/CardComp";
 
 const resultNumber = ref(76)
+const isFetching = ref(false)
 
 const list = ref([
       {
@@ -66,26 +67,29 @@ function generateRandomNumber(min, max) {
 }
 
 function handleResult () {
-  buttonText.value = '... is loading'
-  list.value.forEach(obj => {
-    obj.score = 0
-  })
-
-  resultNumber.value = 0
-  setTimeout(() => {
-    buttonText.value = 'Complete !'
-    let sum = []
+  if (!isFetching.value) {
+    isFetching.value = true
+    buttonText.value = '... is loading'
     list.value.forEach(obj => {
-      obj.score = generateRandomNumber(50, 95);
-      sum.push(obj.score)
-      resultNumber.value = (sum.reduce((partialSum, a) => partialSum + a, 0) / 4).toFixed(0) * 1;
+      obj.score = 0
     })
-    isComplete.value = true
+    resultNumber.value = 0
     setTimeout(() => {
-      buttonText.value = 'Continue'
-      isComplete.value = false
-    }, 3000)
-  }, 1500)
+      buttonText.value = 'Complete !'
+      let sum = []
+      list.value.forEach(obj => {
+        obj.score = generateRandomNumber(50, 95);
+        sum.push(obj.score)
+        resultNumber.value = (sum.reduce((partialSum, a) => partialSum + a, 0) / 4).toFixed(0) * 1;
+      })
+      isComplete.value = true
+      setTimeout(() => {
+        buttonText.value = 'Continue'
+        isComplete.value = false
+        isFetching.value = false
+      }, 3000)
+    }, 1500)
+  }
 }
 </script>
 
