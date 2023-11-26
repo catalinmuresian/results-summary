@@ -1,7 +1,7 @@
 <template>
   <div class="card-comp" :class="`${category.toLowerCase()}-comp`">
     <div class="category">
-      <img :src="`../assets/${icon}`" :alt="icon">
+      <img :src="icon" :alt="icon">
       <h2 :class="`${category.toLowerCase()}-title`">{{ category }}</h2>
     </div>
     <div class="score">
