@@ -214,7 +214,7 @@ function handleResult () {
           font-size: 32px;
         }
         h6 {
-          width: 250px;
+          width: 255px;
           font-size: 18px;
           margin-top: 20px;
         }
