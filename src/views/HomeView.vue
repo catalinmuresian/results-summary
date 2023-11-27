@@ -123,6 +123,7 @@ function handleResult () {
       h2 {
         font-size: 52px;
         margin: 0;
+        font-weight: 800;
       }
       h4 {
         margin: 0;
