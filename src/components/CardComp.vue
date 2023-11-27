@@ -87,16 +87,16 @@ const props = defineProps({
   }
 
 .reaction-comp {
-  background-color: #FDF2ED;
+  background-color: hsl(6, 100%, 98%);
 }
 .memory-comp {
-  background-color: #FFF9EE;
+  background-color: hsl(42, 100%, 97%);
 }
 .verbal-comp {
-  background-color: #F0F9F9;
+  background-color: hsl(180, 44%, 96%);
 }
 .visual-comp {
-  background-color: #F0EFFC;
+  background-color: hsl(240, 71%, 97%);
 }
 
 

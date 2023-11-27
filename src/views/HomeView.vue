@@ -23,6 +23,7 @@
       </div>
       <button
           :class="isComplete && 'complete'"
+          :style="isFetching && 'cursor: default;'"
           @click="handleResult()">{{ buttonText }}</button>
     </div>
   </div>
@@ -107,7 +108,7 @@ function handleResult () {
     gap: 20px;
     h1 {
       font-size: 18px;
-      color: #bbaef8;
+      color: #c9c1ef;
       margin: 20px 0 0;
     }
     .circle {
@@ -223,11 +224,11 @@ function handleResult () {
       width: 45%;
       padding: 0 40px;
       h1 {
-        font-size: 25px;
-        margin: 40px 0 25px;
+        font-size: 22px;
+        margin: 45px 0 30px;
       }
       .list {
-        gap: 15px;
+        gap: 20px;
       }
     }
     .result {
