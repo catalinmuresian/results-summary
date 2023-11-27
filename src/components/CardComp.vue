@@ -41,6 +41,7 @@ const props = defineProps({
     }
     h2 {
       font-size: 16px;
+      font-weight: 700;
     }
     .reaction-title {
       color: hsl(0, 100%, 67%);
@@ -68,10 +69,11 @@ const props = defineProps({
     }
   }
   @media only screen and (min-width: 700px) {
-    padding: 1px 10px;
+    padding: 1px 15px;
     .category {
       h2 {
         font-size: 18px;
+        font-weight: 700;
       }
     }
     .score {
