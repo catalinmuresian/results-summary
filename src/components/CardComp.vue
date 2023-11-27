@@ -68,18 +68,18 @@ const props = defineProps({
     }
   }
   @media only screen and (min-width: 700px) {
-    padding: 0 10px;
+    padding: 1px 10px;
     .category {
-      img {
-        width: 17px;
-      }
       h2 {
-        font-size: 15px;
+        font-size: 18px;
       }
     }
     .score {
       .value {
-        font-size: 15px;
+        font-size: 18px;
+      }
+      span {
+        font-size: 18px;
       }
     }
   }

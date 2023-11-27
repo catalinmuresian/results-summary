@@ -187,46 +187,56 @@ function handleResult () {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 630px;
+    max-width: 750px;
+    height: 520px;
     box-shadow: 20px 20px 20px 5px rgba(5, 0, 255, 0.05);
     border-radius: 30px;
     .result {
-      width: 53%;
+      width: 55%;
+      gap: 35px;
       h1 {
-        font-size: 20px;
-        margin-top: 32px;
+        font-size: 24px;
+        margin-top: 35px;
       }
       .circle {
-        width: 160px;
-        height: 160px;
+        width: 200px;
+        height: 200px;
         h2 {
-          font-size: 60px;
+          font-size: 70px;
+        }
+        h4 {
+          font-size: 18px;
         }
       }
       .info {
         h2 {
-          font-size: 27px;
+          font-size: 32px;
         }
         h6 {
-          width: 210px;
-          font-size: 15px;
+          width: 250px;
+          font-size: 18px;
+          margin-top: 20px;
         }
       }
     }
     .summary {
-      width: 47%;
-      padding: 0 35px;
+      width: 45%;
+      padding: 0 40px;
+      h1 {
+        font-size: 25px;
+        margin: 40px 0 25px;
+      }
       .list {
-        gap: 13px;
+        gap: 15px;
       }
     }
     .result {
       border-radius: 30px;
     }
     .summary button {
-      margin-top: 35px;
-      padding: 16px;
-      font-size: 14px;
+      margin-top: 40px;
+      padding: 18px;
+      font-size: 16px;
     }
   }
 }
