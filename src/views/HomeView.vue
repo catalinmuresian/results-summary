@@ -222,7 +222,7 @@ function handleResult () {
     }
     .summary {
       width: 45%;
-      padding: 0 40px;
+      padding: 0 40px 0 45px;
       h1 {
         font-size: 22px;
         margin: 45px 0 30px;
@@ -237,7 +237,7 @@ function handleResult () {
     .summary button {
       margin-top: 40px;
       padding: 18px;
-      font-size: 15px;
+      font-size: 16px;
     }
   }
 }
