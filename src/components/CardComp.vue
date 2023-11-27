@@ -73,7 +73,7 @@ const props = defineProps({
     .category {
       h2 {
         font-size: 18px;
-        font-weight: 700;
+        font-weight: 500;
       }
     }
     .score {

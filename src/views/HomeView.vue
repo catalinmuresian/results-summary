@@ -237,7 +237,7 @@ function handleResult () {
     .summary button {
       margin-top: 40px;
       padding: 18px;
-      font-size: 16px;
+      font-size: 15px;
     }
   }
 }
